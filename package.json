@@ -7,10 +7,11 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build && vite build --config ssr.config.js",
-        "build-watch": "vite build --watch && vite build --config ssr.config.js"
+        "build-watch": "vite build --watch && vite build --config ssr.config.js",
+        "start:ssr": "node bootstrap/assets/ssr.js"
     },
     "devDependencies": {
-        "@inertiajs/react": "^1.1.0",
+        "@inertiajs/react": "^2.3.6",
         "@vitejs/plugin-react": "^4.3.4",
         "autoprefixer": "^10.4.12",
         "axios": "^1.6.4",
@@ -20,8 +21,10 @@
         "vite": "^5.0"
     },
     "dependencies": {
-        "@inertiajs/react": "^1.1.0",
+        "@types/react": "^19.2.7",
+        "@types/react-dom": "^19.2.3",
         "react": "^18.3.1",
-        "react-dom": "^18.3.1"
+        "react-dom": "^18.3.1",
+        "typescript": "^5.9.3"
     }
 }
